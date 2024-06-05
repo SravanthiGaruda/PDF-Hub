@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"> 
 </head>
 <body>
+    <img src="{{ url_for('static', filename='logo2.png') }}" alt="Logo" class="logo">
     <div class="container">
-        <h1>PDF All-in-One Hub</h1>
-        <a href="/split" class="btn">Split PDF</a>
-        <a href="/merge" class="btn">Merge PDF</a>
-        <a href="/upload" class="btn">View PDF</a>
-        <a href="/translate" class="btn">Translate PDF</a><br/>
-        <a href="/summarize" class="btn">Summarize PDF</a> 
-        <a href="/encrypt" class="btn">Encrypt PDF</a> 
-    </div>
-</body>
-</html>
+        <!-- <h1>PDF All-in-One Hub</h1> -->
+        <div class="buttons">
+            <a href="/split" class="btn">Split PDF</a>
+            <a href="/merge" class="btn">Merge PDF</a>
+            <a href="/upload" class="btn">View PDF</a>
+            <a href="/translate" class="btn">Translate PDF</a><br/>
+            <a href="/summarize" class="btn">Summarize PDF</a> 
+            <a href="/encrypt" class="btn">Encrypt PDF</a> 
+        </div>
+  
