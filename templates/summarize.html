@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarize PDF</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='translate.css') }}"> 
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Summarizer</h1>
+        <form action="/summarize" method="post">
+            <label for="pdf_url">Enter PDF URL:</label><br>
+            <input type="text" id="pdf_url" name="pdf_url" size="50"><br><br> 
+            <label for="prompt">Enter your prompt:</label><br>
+            <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea><br><br>
+            <label for="api_key">Enter your OpenAI API Key:</label><br>
+            <input type="password" id="api_key" name="api_key" size="50"><br><br> 
+            <input type="submit" value="Summarize">
+        </form>
+        <a href="/" class="back-btn">Back</a> 
+    </div>
+</body>
+</html>

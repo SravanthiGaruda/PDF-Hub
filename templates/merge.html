@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='merge.css') }}">  <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Merger</h1>
+        <form action="/merge" method="post" enctype="multipart/form-data">
+            <label for="files">Select PDF files to merge:</label>
+            <input type="file" id="files" name="files[]" multiple accept=".pdf">
+            <input type="submit" value="Merge PDFs">
+        </form>
+        <form action="/">
+            <input type="button" value="Back" onclick="window.location.href='/'">
+        </form>
+    </div>
+</body>
+</html>

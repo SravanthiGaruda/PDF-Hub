@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='summary.css') }}"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Summary</h1>
+        <div class="summary">
+            <p>{{ summary }}</p>
+        </div>
+    </div>
+</body>
+</html>
