@@ -1,4 +1,4 @@
-Pdf-hub   # PDF-HUB Project
+## PDF-HUB Project
 The PDF-HUB project is designed to provide an all-in-one solution for various PDF-related tasks. This application offers functionalities such as PDF splitting, merging, viewing, summarizing, encrypting, and translating. It ensures the security of sensitive data while providing a comprehensive set of tools.
 
 ## Features
